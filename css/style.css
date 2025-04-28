@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5,
 
 .site-section {
   padding: 2.5em 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) { 
     .site-section {
       padding: 5em 0; } }
   .site-section.site-section-sm {
@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5,
 .hover-bg-enlarge {
   overflow: hidden;
   position: relative; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 1200px) {
     .hover-bg-enlarge {
       height: auto !important; } }
   .hover-bg-enlarge > div {
@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5,
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
-  @media (max-width: 991.98px) {
+  @media (max-width: 1200px) {
     .hover-bg-enlarge .bg-image-md-height {
       height: 300px !important; } }
 
@@ -233,11 +233,11 @@ h1, h2, h3, h4, h5,
     position: relative;
     z-index: 1; }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1200px) {
   .img-md-fluid {
     max-width: 100%; } }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1200px) {
   .display-1, .display-3 {
     font-size: 3rem; } }
 
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5,
   .site-navbar .container-fluid {
     padding-left: 7rem;
     padding-right: 7rem; }
-    @media (max-width: 991.98px) {
+    @media (max-width:1200px) {
       .site-navbar .container-fluid {
         padding-left: 15px;
         padding-right: 15px; } }
@@ -647,7 +647,7 @@ h1, h2, h3, h4, h5,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-    @media (max-width: 991.98px) {
+    @media (max-width:1200px) {
       .intro-section:before {
         width: 100%; } }
   .intro-section:after {
@@ -663,7 +663,7 @@ h1, h2, h3, h4, h5,
     font-size: 4rem;
     font-weight: 900;
     color: #fff; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 1200px) {
       .intro-section h1 {
         font-size: 2rem; } }
   .intro-section .desc {
@@ -728,7 +728,7 @@ h1, h2, h3, h4, h5,
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
-  @media (max-width: 991.98px) {
+  @media (max-width: 1200px) {
     .schedule-wrap2 {
       width: 90%; } }
   .schedule-wrap2:before {
@@ -892,7 +892,7 @@ h1, h2, h3, h4, h5,
     font-size: 3rem;
     margin-top: 0;
     font-weight: bold; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 1200px) {
       .bgimg h2 {
         font-size: 2rem; } }
   .bgimg a {
