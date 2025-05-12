@@ -1,9 +1,11 @@
-var http = require('http');
+const express = require('express');
+const router = express.Router();
 
-http.createServer(function (req, res) {
-  res.setHeader('Acess-Control-Allow-Origins', ' * ')
-  res.setHeader('Acess-Control-Allow-Methods', 'GET , POST')
-  res.setHeader('Acess-Control-Allow-Headers', 'Content-type')
-  res.writeHead(200, {'Content-Type': 'application/json'});
-  res.end('{"contactSubject": ["General Enquery","Classes","Schedules","Instructors","Prices","Other","Phattadon"]}');
-}).listen(5000);
+const subject = '{"contactSubject": ["General Enquery","Classes","Schedules","Instructors","Prices","Other","Phattadon"]}'
+
+router.get('/', (req, res) => {
+  res.json(subject);
+});
+
+
+module.exports = router 
