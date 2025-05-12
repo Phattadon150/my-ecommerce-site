@@ -1507,10 +1507,15 @@
             <h3 class="text-white">Subscribe</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, odio beatae accusantium.
             </p>
-            <form id="subscribe-email" type="email" action="#">
+            <form id="subscribe-form">
+      <div class="d-flex mb-5">
+        <input type="email" id="subscribe-email" class="form-control rounded-0" placeholder="Email" required>
+        <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+      </div>
+    </form>
               <div class="d-flex mb-5">
-                <input type="text" class="form-control rounded-0" placeholder="Email">
-                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+
+               
               </div>
             </form>
           </div>
@@ -1730,6 +1735,31 @@ document.getElementById('subscribe-form').addEventListener('submit', async (e) =
 });
 
   </script>
+
+<script>
+  document.getElementById('subscribe-form').addEventListener('submit', async (e) => {
+    e.preventDefault(); // Prevent form from refreshing the page
+
+    const email = document.getElementById('subscribe-email').value;
+
+    const subscribeData = { email };
+
+    try {
+      const response = await fetch('http://localhost:3000/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(subscribeData)
+      });
+
+      const result = await response.json();
+      console.log('Server responded with:', result.message);
+      alert('Subscribed successfully: ' + result.message); // optional feedback
+    } catch (error) {
+      console.error('Subscription failed:', error);
+    }
+  });
+</script>
+
 </body>
 
 </html>
